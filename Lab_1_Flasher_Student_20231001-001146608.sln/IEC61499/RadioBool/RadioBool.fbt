@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="d71227d4-72de-4f0a-b1ba-6e56d9782b8c" Name="RadioBool" Comment="Composite Function Block Type" Namespace="Main">
+  <Attribute Name="HMI.Alias" Value="" />
+  <Attribute Name="Configuration.FB.IDCounter" Value="1" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="Pranay Jhunjhunwala" Date="15/08/2022" Remarks="template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="INIT" Comment="Initialization Request">
+        <With Var="QI" />
+        <With Var="Label1" />
+        <With Var="Label0" />
+      </Event>
+      <Event Name="REQ" Comment="Normal Execution Request">
+        <With Var="QI" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="INITO" Comment="Initialization Confirm">
+        <With Var="QO" />
+      </Event>
+      <Event Name="CNF" Comment="Execution Confirmation">
+        <With Var="QO" />
+        <With Var="Out" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="QI" Type="BOOL" Comment="Input event qualifier" />
+      <VarDeclaration Name="Label1" Type="STRING" />
+      <VarDeclaration Name="Label0" Type="STRING" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="QO" Type="BOOL" Comment="Output event qualifier" />
+      <VarDeclaration Name="Out" Type="BOOL" />
+    </OutputVars>
+  </InterfaceList>
+  <FBNetwork>
+    <FB ID="1" Name="IThis" Type="RadioBool_HMI" x="1220" y="240" Namespace="Main" />
+    <Input Name="INIT" x="12" y="12" Type="Event" />
+    <Input Name="REQ" x="12" y="72" Type="Event" />
+    <Input Name="QI" x="12" y="132" Type="Data" />
+    <Input Name="Label1" x="12" y="192" Type="Data" />
+    <Input Name="Label0" x="40" y="592" Type="Data" />
+    <Output Name="INITO" x="1860" y="252" Type="Event" />
+    <Output Name="CNF" x="1860" y="312" Type="Event" />
+    <Output Name="QO" x="1860" y="512" Type="Data" />
+    <Output Name="Out" x="1840" y="632" Type="Data" />
+    <EventConnections>
+      <Connection Source="INIT" Destination="IThis.INIT" dx1="209.4167" />
+      <Connection Source="REQ" Destination="IThis.REQ" dx1="197.5417" />
+      <Connection Source="IThis.INITO" Destination="INITO">
+        <AvoidsNodes>false</AvoidsNodes>
+      </Connection>
+      <Connection Source="IThis.CNF" Destination="CNF" />
+      <Connection Source="IThis.INITO" Destination="IThis.REQ" dx1="63.3125" dx2="70" dy="-110">
+        <AvoidsNodes>false</AvoidsNodes>
+      </Connection>
+    </EventConnections>
+    <DataConnections>
+      <Connection Source="QI" Destination="IThis.QI" dx1="103.2084" />
+      <Connection Source="Label1" Destination="IThis.Label1" dx1="40" />
+      <Connection Source="Label0" Destination="IThis.Label0" dx1="49.25006" />
+      <Connection Source="IThis.Out" Destination="Out">
+        <AvoidsNodes>false</AvoidsNodes>
+      </Connection>
+      <Connection Source="IThis.QO" Destination="QO" />
+    </DataConnections>
+  </FBNetwork>
+</FBType>

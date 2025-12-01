@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System Name="System" ProjectName="Lab_1_Flasher_Student" ProjectGuid="{55A54F16-0779-4FF4-BA5B-5514D0264054}" BuildTime="2025-12-01 20:49:09Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther v23.0 g5171 d5c8a03 Wed Aug 30 07:22:22 2023" SnapshotGuid="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+  <Device ID="d2fc03ae-0ddd-4bb1-a3cf-8f52b744df65" Name="FLASHER" Type="Soft_dPAC" Namespace="SE.DPAC">
+    <Resource ID="2655A84F42C39B2C" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
+      <FBNetwork>
+        <FB ID="C264603AFF55321" Name="RS_GATE" Type="E_SWITCH" Namespace="IEC61499.Standard" />
+        <FB ID="A6640EFA3E1BB0AB" Name="FB2" Type="E_CYCLE" Namespace="IEC61499.Standard" />
+        <FB ID="D89C64D8D8427F28" Name="FB1" Type="FLASHER4" Namespace="Main" />
+        <FB ID="BA0DD96C18C154BA" Name="CHAN_CTL_PANEL_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51302" />
+          <Parameter Name="PEERNAME" Value="'CTL_PANEL.RES0'" />
+        </FB>
+        <FB ID="5E060304491CE3C9" Name="CHAN_DISPLAY_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51303" />
+          <Parameter Name="PEERNAME" Value="'DISPLAY.RES0'" />
+        </FB>
+        <FB Name="PROXY_114FE3C8BE6553495" Type="CROSSCOMM_PEER_86868271B499C6F0" Comment="FLASHER_RES0_APP1_FREQ" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;OUT&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;OUT&quot; Type=&quot;TIME&quot; /&gt;&#xD;&#xA;  &lt;/OutputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="PROXY_179ED70CC4100920F" Type="CROSSCOMM_PEER_206268B6AE5B21954" Comment="FLASHER_RES0_APP1_MODE" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;I&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;I&quot; Type=&quot;UINT&quot; /&gt;&#xD;&#xA;  &lt;/OutputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="PROXY_334910CDF2D5CD04" Type="CROSSCOMM_PEER_119A6D19C7508D132" Comment="FLASHER_RES0_APP1_RadioBool" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;Out&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;Out&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;  &lt;/OutputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="PROXY_22803741C1DD7B0B" Type="CROSSCOMM_PEER_195C19FF067434822" Comment="FLASHER_RES0_APP1_LED_PANEL" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="SND_PROXY_671432799529802F" Type="CROSSCOMM_SENDER_49CFBE3BDC6326A7" Comment="DISPLAY_RES0_APP1_FB1" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;LED3&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LED2&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LED1&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LED0&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED3&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED2&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED1&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED0&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;  &lt;/InputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="START" Type="E_RESTART" Namespace="IEC61499.Standard" />
+        <EventConnections>
+          <Connection Source="RS_GATE.EO0" Destination="FB2.STOP" />
+          <Connection Source="RS_GATE.EO1" Destination="FB2.START" />
+          <Connection Source="FB2.EO" Destination="FB1.REQ" />
+          <Connection Source="START.COLD" Destination="RS_GATE.EI" />
+          <Connection Source="START.WARM" Destination="RS_GATE.EI" />
+          <Connection Source="PROXY_114FE3C8BE6553495.CNF" Destination="RS_GATE.EI" />
+          <Connection Source="PROXY_179ED70CC4100920F.CNF" Destination="FB1.REQ" />
+          <Connection Source="PROXY_179ED70CC4100920F.INITO" Destination="FB1.INIT" />
+          <Connection Source="PROXY_334910CDF2D5CD04.CNF" Destination="RS_GATE.EI" />
+          <Connection Source="PROXY_22803741C1DD7B0B.INITO" Destination="FB1.INIT" />
+          <Connection Source="FB1.CNF" Destination="SND_PROXY_671432799529802F.CNF" />
+        </EventConnections>
+        <DataConnections>
+          <Connection Source="PROXY_114FE3C8BE6553495.OUT" Destination="FB2.DT" />
+          <Connection Source="PROXY_179ED70CC4100920F.I" Destination="FB1.MODE" />
+          <Connection Source="PROXY_334910CDF2D5CD04.Out" Destination="RS_GATE.G" />
+          <Connection Source="FB1.LED3" Destination="SND_PROXY_671432799529802F.LED3" />
+          <Connection Source="FB1.LED2" Destination="SND_PROXY_671432799529802F.LED2" />
+          <Connection Source="FB1.LED1" Destination="SND_PROXY_671432799529802F.LED1" />
+          <Connection Source="FB1.LED0" Destination="SND_PROXY_671432799529802F.LED0" />
+        </DataConnections>
+        <AdapterConnections />
+      </FBNetwork>
+    </Resource>
+    <FBNetwork />
+  </Device>
+</System>

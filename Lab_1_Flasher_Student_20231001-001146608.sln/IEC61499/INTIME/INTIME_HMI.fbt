@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="22dcf7dd-41a6-4224-aaab-80b58986a22b" Name="INTIME_HMI" Comment="Service Interface Function Block Type" Namespace="Main">
+  <Attribute Name="Runtime.Persistence.Storage" Value="0" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="UoA" Version="0.0" Author="Pranay Jhunjhunwala" Date="09/08/2022" Remarks="template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event ID="D50CE26D8F3754B0" Name="INIT">
+        <With Var="QI" />
+      </Event>
+      <Event ID="A53CC99D0B64AC86" Name="REQ">
+        <With Var="MINMS" />
+        <With Var="MAXMS" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event ID="859C277FD34F779C" Name="INITO">
+        <With Var="QO" />
+        <With Var="STATUS" />
+      </Event>
+      <Event ID="E3E3ED4B01A867C5" Name="CNF">
+        <With Var="OUT" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration ID="FA95672D2C75CF8B" Name="QI" Type="BOOL" />
+      <VarDeclaration ID="A5FCE9207942BC36" Name="MINMS" Type="DINT" />
+      <VarDeclaration ID="FC7C95BA493C0F84" Name="MAXMS" Type="DINT" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration ID="D7DFE542DFAC629F" Name="QO" Type="BOOL" Comment="Event Output Qualifier" />
+      <VarDeclaration ID="C3EFD1792CF8741B" Name="STATUS" Type="STRING" Comment="Service Status" />
+      <VarDeclaration ID="4180872D95951201" Name="OUT" Type="DINT" />
+    </OutputVars>
+  </InterfaceList>
+  <Service RightInterface="" LeftInterface="">
+    <ServiceSequence Name="" />
+  </Service>
+</FBType>

@@ -1,0 +1,24 @@
+{
+  "snapshot": {
+    "guid": "d2fbfbc9-d272-4c18-91a4-d83d0cb5d909",
+    "hash": "490C07F760D625E729563DEA6424A8A4FD76E4DC59F07A35DB637473B6095A08",
+    "app": {
+      "hash": "490C07F760D625E729563DEA6424A8A4FD76E4DC59F07A35DB637473B6095A08",
+      "items": [
+        "Main#RadioBool_HMI.bin",
+        "Main#RadioBool.bin",
+        "Main#number2time.bin",
+        "Main#INTIME_HMI.bin",
+        "Main#INTIME.bin",
+        "Main#INCHOICE_HMI.bin",
+        "Main#INCHOICE.bin",
+        "Main#CROSSCOMM_SENDER_153F5A08CC8D75AF0.bin",
+        "Main#CROSSCOMM_SENDER_200C0D3AE43A7966C.bin",
+        "Main#CROSSCOMM_SENDER_173D71B9DC3A56340.bin",
+        "Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin",
+        "Device.bin",
+        "CommDesc.xml"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeployFiles xmlns="http://tempuri.org/DeploySnapshot.xsd">
+  <Deployable>
+    <DeployInformation Type="Working">
+      <FileGroup Name="FileList">
+        <FileItem Name="Basics/Main#FLASHER4.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>0905DD36A043D33094AF4A384C217035225D1F5F1CD7ECF945936C36B9ED736B</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_86868271B499C6F0.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>A9963D8A53FDF03AAC0AB1F003324206DD6D04303CD2BF0AA0BA68B0680BBD6C</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_206268B6AE5B21954.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>D30B23D4B8CE8F5D8991FD09C6858EC82EFA001ADF708D8686C13499255330A8</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_119A6D19C7508D132.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>C4C98EE33FA34635136A68B75F21F6178E449D454F3C11726084C699AF79A1DB</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>0A64B6BD97E1EEBD4BE6B4675A3C2E79C623022757D9F356E851C2DD5CEAE871</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_49CFBE3BDC6326A7.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>8A3E45DBAE2304646F9B23CCC2E8039ED57F1ABCDF47D400C12C493B0979D370</Hash>
+        </FileItem>
+      </FileGroup>
+      <FileGroup Name="DeployList">
+        <FileItem Name="Basics/Main#FLASHER4.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_86868271B499C6F0.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_206268B6AE5B21954.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_119A6D19C7508D132.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_49CFBE3BDC6326A7.bin" Library="IEC61499.dll" />
+      </FileGroup>
+    </DeployInformation>
+  </Deployable>
+</DeployFiles>

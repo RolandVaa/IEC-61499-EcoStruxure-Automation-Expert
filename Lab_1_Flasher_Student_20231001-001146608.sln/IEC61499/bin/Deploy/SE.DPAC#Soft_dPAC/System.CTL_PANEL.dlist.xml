@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeployFiles xmlns="http://tempuri.org/DeploySnapshot.xsd">
+  <Deployable>
+    <DeployInformation Type="Working">
+      <FileGroup Name="FileList">
+        <FileItem Name="Composites/Main#RadioBool_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>1EB098D192D23EE64427F685A76EF1BD3F6232ED9D9CE08B80C5C2250F08E7F1</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#RadioBool.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>F53ECD56DE4F7C167D9CDFF01A5841BAA28D41ADF5B05FCBB6B81DEC0A806891</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#number2time.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>1B5B4D895607E175518CFFE725DA6EA6E0A3BF9F922666BDDC392BC9C90E0FF2</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#INTIME_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>E7BF18C1C70D6AAB5E434C39D51092E0AEB908FB4F2DB0635EBA98E5A7864160</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#INTIME.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>E5585F7C4915E1422CB31C2DEBA6968CCAD62D4E7522F264436CD2EA05F43591</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#INCHOICE_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>908A31D6711ADB90DEEE079B171782C144B649AD37EB9B805423D29682095E75</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#INCHOICE.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>5C5302B24D14C62BE6DD2F7447504881F034E7DC1375D34D1B287B0477FE23BE</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_153F5A08CC8D75AF0.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>D28EB90F5694ECE2110D5A0815032FF635D0A41FD256F70979CB0F6AFA2334BB</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_200C0D3AE43A7966C.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>2A6B0C36C77BC87ED61799E5375B679B441A3DED3A6E059650B7F1307B2FD671</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_173D71B9DC3A56340.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>27A6F09241B3A1350526CC9DDEEEED2F2232C4719E24546FCAE4C7C91E8CDDED</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>F285696B7E766B137E821FCEBE1324D239E003FE823F8106A0A8BDD5244362B2</Hash>
+        </FileItem>
+      </FileGroup>
+      <FileGroup Name="DeployList">
+        <FileItem Name="Composites/Main#RadioBool_HMI.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#RadioBool.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#number2time.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#INTIME_HMI.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#INTIME.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#INCHOICE_HMI.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#INCHOICE.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_153F5A08CC8D75AF0.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_200C0D3AE43A7966C.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_173D71B9DC3A56340.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" />
+      </FileGroup>
+    </DeployInformation>
+  </Deployable>
+</DeployFiles>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapping>
+  <EventInputs />
+  <EventOutputs>
+    <Event Name="CNF">I</Event>
+  </EventOutputs>
+  <Inputs />
+  <Outputs>
+    <Output Name="I" Type="UINT" />
+  </Outputs>
+</Mapping>

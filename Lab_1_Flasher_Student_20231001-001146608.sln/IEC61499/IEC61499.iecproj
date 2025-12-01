@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Lab_1_Flasher_Student" Guid="{55A54F16-0779-4FF4-BA5B-5514D0264054}" Version="1.5.0.0" xmlns="http://www.nxtcontrol.com/IEC61499.xsd">
+  <Archive>
+    <ExcludeDir>
+      <string>Exports</string>
+      <string>Imports</string>
+      <string>Documentation</string>
+      <string>TestReports</string>
+    </ExcludeDir>
+  </Archive>
+  <References />
+  <CanvasResolution StartCanvasClass="HMI.Main.Canvases.StartCanvas_1" Width="1280" Height="980" WorkAreaWidth="1280" WorkAreaHeight="900" Template="Default" Login="true" NavigationControl="1" CurrentUser="true" LanguageButton="true" RuntimeConnection="true" Logger="false" NavigationBar="true" NewVersionDeployed="true" Exit="false" ShowWarningMessage="false" WarningText="" SiblingButtonCount="0" ChildButtonCount="0" IsCanvasTopologyPanel="true" ResizeBehaviour="None" AliasNameToggle="false" CanvasButtonHeight="30">
+    <Topology Name="Default">
+      <Canvases>
+        <Canvas Name="Canvas1" Title="" Tooltip="" Instance="HMI.Main.Canvases.Canvas1" />
+      </Canvases>
+    </Topology>
+  </CanvasResolution>
+  <CanvasResolution StartCanvasClass="" Width="-1" Height="-1" WorkAreaWidth="-1" WorkAreaHeight="-1" Template="" Login="true" NavigationControl="0" CurrentUser="true" LanguageButton="true" RuntimeConnection="true" Logger="false" NavigationBar="true" NewVersionDeployed="true" Exit="false" ShowWarningMessage="false" WarningText="" SiblingButtonCount="5" ChildButtonCount="5" IsCanvasTopologyPanel="true" ResizeBehaviour="None" AliasNameToggle="false" CanvasButtonHeight="30">
+    <Topology Name="Default" />
+  </CanvasResolution>
+  <Graphics Name="Graphics" IsExternal="false" />
+  <WebGraphics Name="WebGraphics" IsExternal="false" />
+  <Security Level="Internal" IsActive="true">
+    <Info>﻿&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;UserManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" HighestID="2"&gt;&lt;UserInfos Name="DIAS" Password="$1$6EECB3AC219CF8632F336188A58C4B9C0FAABC3D3901285A7679A8633C8DD4A9$3B0B7B790BB57A323BDFC2C8608D4F511EF955D2EBD21FF791F17BA156A4886E" SecurityToken="127" ID="1" MeetsCalLaw="true" /&gt;&lt;/UserManager&gt;</Info>
+  </Security>
+  <PluginGUIDs />
+</ProjectDatabase>

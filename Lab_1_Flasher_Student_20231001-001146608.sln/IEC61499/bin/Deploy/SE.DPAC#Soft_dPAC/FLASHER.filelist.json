@@ -1,0 +1,19 @@
+{
+  "snapshot": {
+    "guid": "d2fbfbc9-d272-4c18-91a4-d83d0cb5d909",
+    "hash": "2DCD9E92C32F561BEA1AD51D41C48E3B5083CBB23677C706B5325990340215C0",
+    "app": {
+      "hash": "2DCD9E92C32F561BEA1AD51D41C48E3B5083CBB23677C706B5325990340215C0",
+      "items": [
+        "Main#FLASHER4.bin",
+        "Main#CROSSCOMM_PEER_86868271B499C6F0.bin",
+        "Main#CROSSCOMM_PEER_206268B6AE5B21954.bin",
+        "Main#CROSSCOMM_PEER_119A6D19C7508D132.bin",
+        "Main#CROSSCOMM_PEER_195C19FF067434822.bin",
+        "Main#CROSSCOMM_SENDER_49CFBE3BDC6326A7.bin",
+        "Device.bin",
+        "CommDesc.xml"
+      ]
+    }
+  }
+}

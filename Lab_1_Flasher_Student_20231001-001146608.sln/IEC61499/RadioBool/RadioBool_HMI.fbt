@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="275beaa1-ec5a-403d-a2b9-ca2e2e527911" Name="RadioBool_HMI" Comment="Service Interface Function Block Type" Namespace="Main">
+  <Attribute Name="Runtime.Persistence.Storage" Value="0" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="Pranay Jhunjhunwala" Date="15/08/2022" Remarks="template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event ID="D7BD2A94414DF23D" Name="INIT">
+        <With Var="QI" />
+      </Event>
+      <Event ID="A7889D29D062D87D" Name="REQ">
+        <With Var="Label1" />
+        <With Var="Label0" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event ID="FE1C922C3C62B42B" Name="INITO">
+        <With Var="QO" />
+        <With Var="STATUS" />
+      </Event>
+      <Event ID="AE717FFEB9CCEBBA" Name="CNF">
+        <With Var="Out" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration ID="A21F91688082D1C6" Name="QI" Type="BOOL" />
+      <VarDeclaration ID="9D7C936BA81C8BF5" Name="Label1" Type="STRING" />
+      <VarDeclaration ID="3CB06C279E45C877" Name="Label0" Type="STRING" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration ID="79B587E88B30AC8" Name="QO" Type="BOOL" Comment="Event Output Qualifier" />
+      <VarDeclaration ID="E3C7ACFE2A102382" Name="STATUS" Type="STRING" Comment="Service Status" />
+      <VarDeclaration ID="18474BC135C873E1" Name="Out" Type="BOOL" />
+    </OutputVars>
+  </InterfaceList>
+  <Service RightInterface="" LeftInterface="">
+    <ServiceSequence Name="" />
+  </Service>
+</FBType>

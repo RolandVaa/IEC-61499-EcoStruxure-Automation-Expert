@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeploymentPluginsFile>
+  <FileGroup Name="ecort_opcua_ns2.bin" Alias="ecort_opcua_ns2.bin" Location="Working" FullName="C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\bin\Deploy\SE.DPAC#Soft_dPAC\System.FLASHER.ecort_opcua_ns2.bin" xmlns="http://tempuri.org/DeploySnapshot.xsd" />
+  <FileGroup Name="OPCUAClientConfig.xml" Alias="OPCUAClientConfig.xml" Location="Working" FullName="C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\bin\Deploy\SE.DPAC#Soft_dPAC\System.FLASHER.OPCUAClientConfig.xml" xmlns="http://tempuri.org/DeploySnapshot.xsd" />
+  <FileGroup Name="offline.opd" Alias="offline.opd" Location="Persistence" FullName="C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\bin\Deploy\SE.DPAC#Soft_dPAC\System.FLASHER.offline.opd" xmlns="http://tempuri.org/DeploySnapshot.xsd" />
+  <FileGroup Name="persdesc.xml" Alias="PersDesc.xml" Location="Working" FullName="C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\bin\Deploy\SE.DPAC#Soft_dPAC\System.FLASHER.persdesc.xml" xmlns="http://tempuri.org/DeploySnapshot.xsd" />
+  <FileGroup Name="alarmConfig.xml" Alias="AlarmConfig.xml" Location="Working" FullName="C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\bin\Deploy\SE.DPAC#Soft_dPAC\System.FLASHER.alarmconfig.xml" xmlns="http://tempuri.org/DeploySnapshot.xsd" />
+  <FileGroup Name="archiveConfig.xml" Alias="ArchiveConfig.xml" Location="Working" FullName="C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\bin\Deploy\SE.DPAC#Soft_dPAC\System.FLASHER.archiveconfig.xml" xmlns="http://tempuri.org/DeploySnapshot.xsd" />
+</DeploymentPluginsFile>

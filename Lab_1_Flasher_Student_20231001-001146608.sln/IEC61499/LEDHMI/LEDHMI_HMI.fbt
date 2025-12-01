@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="5bc32a81-7b8d-418f-a064-dd4fc8f5c7a7" Name="LEDHMI_HMI" Comment="Service Interface Function Block Type" Namespace="Main">
+  <Attribute Name="Runtime.Persistence.Storage" Value="0" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="UoA" Version="0.0" Author="Pranay Jhunjhunwala" Date="09/08/2022" Remarks="template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event ID="D755878989C4F92D" Name="INIT">
+        <With Var="QI" />
+      </Event>
+      <Event ID="1AE88E3D7F2A6E92" Name="REQ">
+        <With Var="LED3" />
+        <With Var="LED2" />
+        <With Var="LED1" />
+        <With Var="LED0" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event ID="7788F4670884583C" Name="INITO">
+        <With Var="QO" />
+        <With Var="STATUS" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration ID="D483CF27D62B0599" Name="QI" Type="BOOL" />
+      <VarDeclaration ID="7478C6140336538D" Name="LED3" Type="BOOL" />
+      <VarDeclaration ID="F464FFA55D059E0B" Name="LED2" Type="BOOL" />
+      <VarDeclaration ID="CFC103848B112185" Name="LED1" Type="BOOL" />
+      <VarDeclaration ID="F4487C28CFF30ED2" Name="LED0" Type="BOOL" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration ID="22B45E741387CF5C" Name="QO" Type="BOOL" Comment="Event Output Qualifier" />
+      <VarDeclaration ID="346449A272267FC7" Name="STATUS" Type="STRING" Comment="Service Status" />
+    </OutputVars>
+  </InterfaceList>
+  <Service RightInterface="" LeftInterface="">
+    <ServiceSequence Name="" />
+  </Service>
+</FBType>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapping>
+  <EventInputs>
+    <Event Name="REQ">MINMS;MAXMS</Event>
+  </EventInputs>
+  <EventOutputs>
+    <Event Name="CNF">OUT</Event>
+  </EventOutputs>
+  <Inputs>
+    <Input Name="MINMS" Type="DINT" />
+    <Input Name="MAXMS" Type="DINT" />
+  </Inputs>
+  <Outputs>
+    <Output Name="OUT" Type="DINT" />
+  </Outputs>
+</Mapping>

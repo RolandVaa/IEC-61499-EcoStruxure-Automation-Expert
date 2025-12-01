@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommunicationDescription>
+  <Channel ChannelId="BD83E7C2AD8B4A20" LinkId="9FD956F0193F07EB">
+    <Endpoint Resource="CTL_PANEL.RES0" URI="nxtv3://0.0.0.0:51301/?proto=udp">
+      <Peer Resource="FLASHER.RES0" URI="nxtv3://127.0.0.1:51302/?proto=udp&amp;alive=3000" PeerFB="CHAN_FLASHER_RES0" />
+    </Endpoint>
+    <Endpoint Resource="FLASHER.RES0" URI="nxtv3://0.0.0.0:51302/?proto=udp">
+      <Peer Resource="CTL_PANEL.RES0" URI="nxtv3://127.0.0.1:51301/?proto=udp&amp;alive=3000" PeerFB="CHAN_CTL_PANEL_RES0" />
+    </Endpoint>
+    <FBConnection Source="CTL_PANEL.RES0.FREQ" Destination="FLASHER.RES0.RS_GATE" SourceProxy="SND_PROXY_114FE3C8BE6553495" DestinationProxy="PROXY_114FE3C8BE6553495" ProxyId="1EA77C9ECDC62A6C">
+      <Event Source="CNF" Destination="EI" EventId="773A19FE365BE7F3" EventHash="75D08F6E4F9D2CB0" />
+    </FBConnection>
+    <FBConnection Source="CTL_PANEL.RES0.MODE" Destination="FLASHER.RES0.FB1" SourceProxy="SND_PROXY_179ED70CC4100920F" DestinationProxy="PROXY_179ED70CC4100920F" ProxyId="1F90655EFDC29A86">
+      <Event Source="CNF" Destination="REQ" EventId="26EE7B4BE4DD2617" EventHash="82FC9052DA7D4A9A" />
+      <Event Source="INITO" Destination="INIT" EventId="1284CAD33AFF8E77" EventHash="14FFF8D43B42E21D" />
+      <Data Source="I" Destination="MODE" />
+    </FBConnection>
+    <FBConnection Source="CTL_PANEL.RES0.RadioBool" Destination="FLASHER.RES0.RS_GATE" SourceProxy="SND_PROXY_334910CDF2D5CD04" DestinationProxy="PROXY_334910CDF2D5CD04" ProxyId="DD8FE26870F7E79A">
+      <Event Source="CNF" Destination="EI" EventId="60433CE5EA8A697C" EventHash="4033846B94BC7EE6" />
+      <Data Source="Out" Destination="G" />
+    </FBConnection>
+    <FBConnection Source="CTL_PANEL.RES0.FREQ" Destination="FLASHER.RES0.FB2" SourceProxy="SND_PROXY_114FE3C8BE6553495" DestinationProxy="PROXY_114FE3C8BE6553495" ProxyId="1EA77C9ECDC62A6C">
+      <Event Source="CNF" Destination="" EventId="773A19FE365BE7F3" EventHash="75D08F6E4F9D2CB0" />
+      <Data Source="OUT" Destination="DT" />
+    </FBConnection>
+  </Channel>
+  <Channel ChannelId="FDAB5E1F647A15E0" LinkId="00ECA271B102A041">
+    <Endpoint Resource="CTL_PANEL.RES0" URI="nxtv3://0.0.0.0:51305/?proto=udp">
+      <Peer Resource="DISPLAY.RES0" URI="nxtv3://127.0.0.1:51304/?proto=udp&amp;alive=3000" PeerFB="CHAN_DISPLAY_RES0" />
+    </Endpoint>
+    <Endpoint Resource="DISPLAY.RES0" URI="nxtv3://0.0.0.0:51304/?proto=udp">
+      <Peer Resource="CTL_PANEL.RES0" URI="nxtv3://127.0.0.1:51305/?proto=udp&amp;alive=3000" PeerFB="CHAN_CTL_PANEL_RES0" />
+    </Endpoint>
+    <FBConnection Source="CTL_PANEL.RES0.MODE" Destination="DISPLAY.RES0.LED_PANEL" SourceProxy="SND_PROXY_102481900DA70C230" DestinationProxy="PROXY_102481900DA70C230" ProxyId="5A16928321F1773F">
+      <Event Source="INITO" Destination="INIT" EventId="1284CAD33AFF8E77" EventHash="14FFF8D43B42E21D" />
+    </FBConnection>
+  </Channel>
+</CommunicationDescription>

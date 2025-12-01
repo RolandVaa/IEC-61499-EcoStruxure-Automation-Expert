@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapping>
+  <EventInputs>
+    <Event Name="REQ">Label1;Label0</Event>
+  </EventInputs>
+  <EventOutputs>
+    <Event Name="CNF">Out</Event>
+  </EventOutputs>
+  <Inputs>
+    <Input Name="Label1" Type="STRING" />
+    <Input Name="Label0" Type="STRING" />
+  </Inputs>
+  <Outputs>
+    <Output Name="Out" Type="BOOL" />
+  </Outputs>
+</Mapping>

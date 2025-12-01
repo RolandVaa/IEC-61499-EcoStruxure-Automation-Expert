@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeployInformation ProjectName="Lab_1_Flasher_Student" ProjectGuid="{55A54F16-0779-4FF4-BA5B-5514D0264054}" System="System" DeviceName="CTL_PANEL" DeviceID="ec8bb4cb-ab92-487e-a5a5-781a1131d14c">
+  <UsedDll>IEC61499.dll|Runtime.Base.90E02843-42CC-4C2C-B657-AB6EE7D00471.dll</UsedDll>
+  <FileName>C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\System\System.sys</FileName>
+  <BuildTime>2025-12-01 20:49:09Z</BuildTime>
+  <StudioVersion>IEC 61499 IDE, Panther v23.0 g5171 d5c8a03 Wed Aug 30 07:22:22 2023</StudioVersion>
+  <StudioInfo>V1;BDB055E8B8336B63DA9AAE37852E204A8EAF813A812F264A8EAFAA359F2F2126A6A0A376A524205695A3A53E8F3E55678AA9F2178D284437B88AA33A9F227E74B89FBB2E882F7572DC9CBD34862F7872A0B9A63FD1312E33A6F9FB1DDD7C3636D0FBF676D80C5D32CA8E8E6EAE672E33D6F88B6BDE7C2F36D2F8B260;</StudioInfo>
+  <ConfigFolder>C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\bin\Deploy\SE.DPAC#Soft_dPAC\Configuration</ConfigFolder>
+  <Actions />
+  <DeviceFileName>System.CTL_PANEL.smartdev.xml</DeviceFileName>
+  <DependenciesFileName>System.CTL_PANEL.fbdep.txt</DependenciesFileName>
+  <SnapshotGuid>{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}</SnapshotGuid>
+</DeployInformation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="9d43df17-68a8-4e86-abc4-0c1e448e60ea" Name="INCHOICE" Comment="Composite Function Block Type" Namespace="Main">
+  <Attribute Name="HMI.Alias" Value="" />
+  <Attribute Name="Configuration.FB.IDCounter" Value="1" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="Pranay Jhunjhunwala" Date="09/08/2022" Remarks="template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="INIT" Comment="Initialization Request">
+        <With Var="QI" />
+        <With Var="CHOICES" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="INITO" Comment="Initialization Confirm">
+        <With Var="QO" />
+      </Event>
+      <Event Name="CNF" Comment="Execution Confirmation">
+        <With Var="QO" />
+        <With Var="I" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="QI" Type="BOOL" Comment="Input event qualifier" />
+      <VarDeclaration Name="CHOICES" Type="STRING" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="QO" Type="BOOL" Comment="Output event qualifier" />
+      <VarDeclaration Name="I" Type="UINT" />
+    </OutputVars>
+  </InterfaceList>
+  <FBNetwork>
+    <FB ID="1" Name="IThis" Type="INCHOICE_HMI" x="1120" y="560" Namespace="Main" />
+    <Input Name="INIT" x="12" y="12" Type="Event" />
+    <Input Name="QI" x="12" y="132" Type="Data" />
+    <Input Name="CHOICES" x="12" y="72" Type="Data" />
+    <Output Name="INITO" x="2120" y="432" Type="Event" />
+    <Output Name="CNF" x="2140" y="572" Type="Event" />
+    <Output Name="QO" x="2220" y="852" Type="Data" />
+    <Output Name="I" x="2240" y="912" Type="Data" />
+    <EventConnections>
+      <Connection Source="INIT" Destination="IThis.INIT" dx1="269.4167" />
+      <Connection Source="IThis.INITO" Destination="INITO" dx1="50" />
+      <Connection Source="IThis.CNF" Destination="CNF" dx1="70" />
+    </EventConnections>
+    <DataConnections>
+      <Connection Source="QI" Destination="IThis.QI" dx1="43.20837" />
+      <Connection Source="IThis.I" Destination="I" dx1="110" />
+      <Connection Source="IThis.QO" Destination="QO" dx1="61.10425" />
+    </DataConnections>
+  </FBNetwork>
+</FBType>

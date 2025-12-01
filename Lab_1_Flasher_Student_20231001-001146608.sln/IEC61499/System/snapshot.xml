@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<baseline xmlns:xsd="http://www.nxtControl.com/Snapshot" xmlns="http://tempuri.org/XMLSchema1.xsd">
+  <snapshot guid="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}" compiler="Default" created="2025-12-01T22:47:24" base="{00000000-0000-0000-0000-000000000000}">
+    <DeployInformation Type="Working">
+      <FileGroup Name="FileList" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Main#CAT1_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>254E72716580E80FA</Hash>
+        </FileItem>
+        <FileItem Name="Main#CAT1.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>218DA281D56E5585B</Hash>
+        </FileItem>
+        <FileItem Name="Main#FLASHER4.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>196EE1148B8031E36</Hash>
+        </FileItem>
+        <FileItem Name="Main#INCHOICE_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>1999FBB4B86BFF1B4</Hash>
+        </FileItem>
+        <FileItem Name="Main#INCHOICE.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>161A60780F05E92A6</Hash>
+        </FileItem>
+        <FileItem Name="Main#number2time.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>125D125C8D2ECB418</Hash>
+        </FileItem>
+        <FileItem Name="Main#INTIME_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>2056F03520E36B6E4</Hash>
+        </FileItem>
+        <FileItem Name="Main#INTIME.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>2309BF931CE18736B</Hash>
+        </FileItem>
+        <FileItem Name="Main#LEDHMI_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>160E1028CE60B819F</Hash>
+        </FileItem>
+        <FileItem Name="Main#LEDHMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>328BA69473D9A2D6</Hash>
+        </FileItem>
+        <FileItem Name="Main#RadioBool_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>129DAFA3D9B824033</Hash>
+        </FileItem>
+        <FileItem Name="Main#RadioBool.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>236AAB68A1B9A18AB</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_119A6D19C7508D132.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>119A6D19C7508D132</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_12120F4A7FB80576D.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>12120F4A7FB80576D</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>195C19FF067434822</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_206268B6AE5B21954.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:15</Modified>
+          <Hash>206268B6AE5B21954</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_86868271B499C6F0.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>86868271B499C6F0</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_153F5A08CC8D75AF0.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>153F5A08CC8D75AF0</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_173D71B9DC3A56340.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>173D71B9DC3A56340</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_200C0D3AE43A7966C.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>200C0D3AE43A7966C</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>45FE03D7848F2EB2</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_49CFBE3BDC6326A7.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>49CFBE3BDC6326A7</Hash>
+        </FileItem>
+        <LibraryItem Name="Runtime.Base" Version="22.1.0.17" />
+        <LibraryItem Name="SE.DPAC" Version="22.1.0.24" />
+        <LibraryItem Name="SE.Standard" Version="22.1.0.9" />
+        <LibraryItem Name="Standard.HMIExtensions" Version="22.1.0.5" />
+        <DeviceItem ID="ec8bb4cb-ab92-487e-a5a5-781a1131d14c" Hash="34AFDDABE49A021F" />
+        <DeviceItem ID="2ea872c1-2742-4cc8-b5fc-f64b860203df" Hash="19606499A4A720153" />
+        <DeviceItem ID="d2fc03ae-0ddd-4bb1-a3cf-8f52b744df65" Hash="767620F5A50F0AFD" />
+      </FileGroup>
+      <Device Name="DISPLAY" ID="2ea872c1-2742-4cc8-b5fc-f64b860203df" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Composites/Main#LEDHMI_HMI.bin">
+          <Hash>B427CDFEE92E519EAC134E339BFAC754ED737E515B3E8DB63A8887BF87C8EA68</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#LEDHMI.bin">
+          <Hash>3E30B178EECEF9E2695248C19C3623E056598C53A5C9C2F63303B16A8918E93C</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
+          <Hash>F285696B7E766B137E821FCEBE1324D239E003FE823F8106A0A8BDD5244362B2</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_12120F4A7FB80576D.bin">
+          <Hash>69B0891522F7E369035B5DF2FF94CF666F7BD760E290D01E347B3C10DF2E59C7</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin">
+          <Hash>0A64B6BD97E1EEBD4BE6B4675A3C2E79C623022757D9F356E851C2DD5CEAE871</Hash>
+        </FileItem>
+      </Device>
+      <Device Name="FLASHER" ID="d2fc03ae-0ddd-4bb1-a3cf-8f52b744df65" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Basics/Main#FLASHER4.bin">
+          <Hash>0905DD36A043D33094AF4A384C217035225D1F5F1CD7ECF945936C36B9ED736B</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_86868271B499C6F0.bin">
+          <Hash>A9963D8A53FDF03AAC0AB1F003324206DD6D04303CD2BF0AA0BA68B0680BBD6C</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_206268B6AE5B21954.bin">
+          <Hash>D30B23D4B8CE8F5D8991FD09C6858EC82EFA001ADF708D8686C13499255330A8</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_119A6D19C7508D132.bin">
+          <Hash>C4C98EE33FA34635136A68B75F21F6178E449D454F3C11726084C699AF79A1DB</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin">
+          <Hash>0A64B6BD97E1EEBD4BE6B4675A3C2E79C623022757D9F356E851C2DD5CEAE871</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_49CFBE3BDC6326A7.bin">
+          <Hash>8A3E45DBAE2304646F9B23CCC2E8039ED57F1ABCDF47D400C12C493B0979D370</Hash>
+        </FileItem>
+      </Device>
+      <Device Name="CTL_PANEL" ID="ec8bb4cb-ab92-487e-a5a5-781a1131d14c" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Composites/Main#RadioBool_HMI.bin">
+          <Hash>1EB098D192D23EE64427F685A76EF1BD3F6232ED9D9CE08B80C5C2250F08E7F1</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#RadioBool.bin">
+          <Hash>F53ECD56DE4F7C167D9CDFF01A5841BAA28D41ADF5B05FCBB6B81DEC0A806891</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#number2time.bin">
+          <Hash>1B5B4D895607E175518CFFE725DA6EA6E0A3BF9F922666BDDC392BC9C90E0FF2</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#INTIME_HMI.bin">
+          <Hash>E7BF18C1C70D6AAB5E434C39D51092E0AEB908FB4F2DB0635EBA98E5A7864160</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#INTIME.bin">
+          <Hash>E5585F7C4915E1422CB31C2DEBA6968CCAD62D4E7522F264436CD2EA05F43591</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#INCHOICE_HMI.bin">
+          <Hash>908A31D6711ADB90DEEE079B171782C144B649AD37EB9B805423D29682095E75</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#INCHOICE.bin">
+          <Hash>5C5302B24D14C62BE6DD2F7447504881F034E7DC1375D34D1B287B0477FE23BE</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_153F5A08CC8D75AF0.bin">
+          <Hash>D28EB90F5694ECE2110D5A0815032FF635D0A41FD256F70979CB0F6AFA2334BB</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_200C0D3AE43A7966C.bin">
+          <Hash>2A6B0C36C77BC87ED61799E5375B679B441A3DED3A6E059650B7F1307B2FD671</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_173D71B9DC3A56340.bin">
+          <Hash>27A6F09241B3A1350526CC9DDEEEED2F2232C4719E24546FCAE4C7C91E8CDDED</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
+          <Hash>F285696B7E766B137E821FCEBE1324D239E003FE823F8106A0A8BDD5244362B2</Hash>
+        </FileItem>
+      </Device>
+    </DeployInformation>
+  </snapshot>
+  <deployment>
+    <network_profile name="(Local Test)">
+      <device id="2ea872c1-2742-4cc8-b5fc-f64b860203df">
+        <sref snapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}" state="ACTIVE" />
+      </device>
+      <device id="d2fc03ae-0ddd-4bb1-a3cf-8f52b744df65">
+        <sref snapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}" state="ACTIVE" />
+      </device>
+      <device id="ec8bb4cb-ab92-487e-a5a5-781a1131d14c">
+        <sref snapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}" state="ACTIVE" />
+      </device>
+    </network_profile>
+  </deployment>
+</baseline>

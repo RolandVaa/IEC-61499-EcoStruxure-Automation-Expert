@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommunicationDescription>
+  <Channel ChannelId="B1E180EAF0C176B6" LinkId="E4B6F8A19AAA0721">
+    <Endpoint Resource="DISPLAY.RES0" URI="nxtv3://0.0.0.0:51300/?proto=udp">
+      <Peer Resource="FLASHER.RES0" URI="nxtv3://${FLASHER}:51303/?proto=udp&amp;alive=3000" PeerFB="CHAN_FLASHER_RES0" />
+    </Endpoint>
+    <Endpoint Resource="FLASHER.RES0" URI="nxtv3://0.0.0.0:51303/?proto=udp">
+      <Peer Resource="DISPLAY.RES0" URI="nxtv3://${DISPLAY}:51300/?proto=udp&amp;alive=3000" PeerFB="CHAN_DISPLAY_RES0" />
+    </Endpoint>
+    <FBConnection Source="DISPLAY.RES0.LED_PANEL" Destination="FLASHER.RES0.FB1" SourceProxy="SND_PROXY_22803741C1DD7B0B" DestinationProxy="PROXY_22803741C1DD7B0B" ProxyId="7571990282A07E78">
+      <Event Source="INITO" Destination="INIT" EventId="217A1B364E0A9612" EventHash="14FFF8D43B42E21D" />
+    </FBConnection>
+    <FBConnection Source="FLASHER.RES0.FB1" Destination="DISPLAY.RES0.LED_PANEL" SourceProxy="SND_PROXY_671432799529802F" DestinationProxy="PROXY_671432799529802F" ProxyId="B7A117BD5D56FC2C">
+      <Event Source="CNF" Destination="REQ" EventId="8D9D026B185C8EB7" EventHash="35FAB4A456948668" />
+      <Data Source="LED3" Destination="LED3" />
+      <Data Source="LED2" Destination="LED2" />
+      <Data Source="LED1" Destination="LED1" />
+      <Data Source="LED0" Destination="LED0" />
+    </FBConnection>
+  </Channel>
+  <Channel ChannelId="FDAB5E1F647A15E0" LinkId="00ECA271B102A041">
+    <Endpoint Resource="DISPLAY.RES0" URI="nxtv3://0.0.0.0:51304/?proto=udp">
+      <Peer Resource="CTL_PANEL.RES0" URI="nxtv3://${CTL_PANEL}:51305/?proto=udp&amp;alive=3000" PeerFB="CHAN_CTL_PANEL_RES0" />
+    </Endpoint>
+    <Endpoint Resource="CTL_PANEL.RES0" URI="nxtv3://0.0.0.0:51305/?proto=udp">
+      <Peer Resource="DISPLAY.RES0" URI="nxtv3://${DISPLAY}:51304/?proto=udp&amp;alive=3000" PeerFB="CHAN_DISPLAY_RES0" />
+    </Endpoint>
+    <FBConnection Source="CTL_PANEL.RES0.MODE" Destination="DISPLAY.RES0.LED_PANEL" SourceProxy="SND_PROXY_102481900DA70C230" DestinationProxy="PROXY_102481900DA70C230" ProxyId="5A16928321F1773F">
+      <Event Source="INITO" Destination="INIT" EventId="1284CAD33AFF8E77" EventHash="14FFF8D43B42E21D" />
+    </FBConnection>
+  </Channel>
+</CommunicationDescription>

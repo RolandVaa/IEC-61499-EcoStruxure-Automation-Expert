@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="073f61e3-b53f-4f87-b726-d53394ff782d" Name="INTIME" Comment="Composite Function Block Type" Namespace="Main">
+  <Attribute Name="HMI.Alias" Value="" />
+  <Attribute Name="Configuration.FB.IDCounter" Value="2" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="UoA" Version="0.0" Author="Pranay Jhunjhunwala" Date="09/08/2022" Remarks="template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="INIT" Comment="Initialization Request">
+        <With Var="QI" />
+        <With Var="MINMS" />
+        <With Var="MAXMS" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="INITO" Comment="Initialization Confirm">
+        <With Var="QO" />
+      </Event>
+      <Event Name="CNF" Comment="Execution Confirmation">
+        <With Var="QO" />
+        <With Var="OUT" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="QI" Type="BOOL" Comment="Input event qualifier" />
+      <VarDeclaration Name="MINMS" Type="DINT" />
+      <VarDeclaration Name="MAXMS" Type="DINT" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="QO" Type="BOOL" Comment="Output event qualifier" />
+      <VarDeclaration Name="OUT" Type="TIME" />
+    </OutputVars>
+  </InterfaceList>
+  <FBNetwork>
+    <FB ID="1" Name="FB1" Type="number2time" x="1760" y="80" Namespace="Main" />
+    <FB ID="2" Name="IThis" Type="INTIME_HMI" x="580" y="80" Namespace="Main" />
+    <Input Name="INIT" x="60" y="72" Type="Event" />
+    <Input Name="QI" x="60" y="352" Type="Data" />
+    <Input Name="MINMS" x="60" y="412" Type="Data" />
+    <Input Name="MAXMS" x="60" y="472" Type="Data" />
+    <Output Name="INITO" x="2200" y="92" Type="Event" />
+    <Output Name="CNF" x="2200" y="152" Type="Event" />
+    <Output Name="QO" x="1180" y="292" Type="Data" />
+    <Output Name="OUT" x="2200" y="352" Type="Data" />
+    <EventConnections>
+      <Connection Source="FB1.INITO" Destination="INITO" />
+      <Connection Source="FB1.CNF" Destination="CNF" />
+      <Connection Source="INIT" Destination="IThis.INIT" dx1="41.41669" />
+      <Connection Source="IThis.INITO" Destination="FB1.INIT" />
+      <Connection Source="IThis.CNF" Destination="FB1.REQ" />
+      <Connection Source="INIT" Destination="IThis.REQ" dx1="41.41669" />
+    </EventConnections>
+    <DataConnections>
+      <Connection Source="FB1.QO" Destination="OUT" />
+      <Connection Source="QI" Destination="IThis.QI" />
+      <Connection Source="MINMS" Destination="IThis.MINMS" />
+      <Connection Source="MAXMS" Destination="IThis.MAXMS" />
+      <Connection Source="IThis.QO" Destination="QO" dx1="90" />
+      <Connection Source="IThis.OUT" Destination="FB1.QI" dx1="110" />
+    </DataConnections>
+  </FBNetwork>
+</FBType>

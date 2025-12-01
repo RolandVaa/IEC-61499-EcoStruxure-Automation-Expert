@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompileFileList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+  <FileItem Name="Main#CAT1_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>254E72716580E80FA</Hash>
+  </FileItem>
+  <FileItem Name="Main#CAT1.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>218DA281D56E5585B</Hash>
+  </FileItem>
+  <FileItem Name="Main#FLASHER4.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>196EE1148B8031E36</Hash>
+  </FileItem>
+  <FileItem Name="Main#INCHOICE_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>1999FBB4B86BFF1B4</Hash>
+  </FileItem>
+  <FileItem Name="Main#INCHOICE.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>161A60780F05E92A6</Hash>
+  </FileItem>
+  <FileItem Name="Main#number2time.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>125D125C8D2ECB418</Hash>
+  </FileItem>
+  <FileItem Name="Main#INTIME_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>2056F03520E36B6E4</Hash>
+  </FileItem>
+  <FileItem Name="Main#INTIME.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>2309BF931CE18736B</Hash>
+  </FileItem>
+  <FileItem Name="Main#LEDHMI_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>160E1028CE60B819F</Hash>
+  </FileItem>
+  <FileItem Name="Main#LEDHMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>328BA69473D9A2D6</Hash>
+  </FileItem>
+  <FileItem Name="Main#RadioBool_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>129DAFA3D9B824033</Hash>
+  </FileItem>
+  <FileItem Name="Main#RadioBool.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>236AAB68A1B9A18AB</Hash>
+  </FileItem>
+  <FileItem Name="Main#CROSSCOMM_PEER_119A6D19C7508D132.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>119A6D19C7508D132</Hash>
+  </FileItem>
+  <FileItem Name="Main#CROSSCOMM_PEER_12120F4A7FB80576D.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>12120F4A7FB80576D</Hash>
+  </FileItem>
+  <FileItem Name="Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>195C19FF067434822</Hash>
+  </FileItem>
+  <FileItem Name="Main#CROSSCOMM_PEER_206268B6AE5B21954.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:14</Modified>
+    <Hash>206268B6AE5B21954</Hash>
+  </FileItem>
+  <FileItem Name="Main#CROSSCOMM_PEER_86868271B499C6F0.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:16</Modified>
+    <Hash>86868271B499C6F0</Hash>
+  </FileItem>
+  <FileItem Name="Main#CROSSCOMM_SENDER_153F5A08CC8D75AF0.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:16</Modified>
+    <Hash>153F5A08CC8D75AF0</Hash>
+  </FileItem>
+  <FileItem Name="Main#CROSSCOMM_SENDER_173D71B9DC3A56340.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:16</Modified>
+    <Hash>173D71B9DC3A56340</Hash>
+  </FileItem>
+  <FileItem Name="Main#CROSSCOMM_SENDER_200C0D3AE43A7966C.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:16</Modified>
+    <Hash>200C0D3AE43A7966C</Hash>
+  </FileItem>
+  <FileItem Name="Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:16</Modified>
+    <Hash>45FE03D7848F2EB2</Hash>
+  </FileItem>
+  <FileItem Name="Main#CROSSCOMM_SENDER_49CFBE3BDC6326A7.bin" Library="IEC61499.dll" BuildSnapshot="{A2763706-EDAA-445A-9B14-BB12DFC7E2F3}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+    <Modified>2025-12-01T22:28:16</Modified>
+    <Hash>49CFBE3BDC6326A7</Hash>
+  </FileItem>
+  <LibraryItem Name="Runtime.Base" Version="22.1.0.17" />
+  <LibraryItem Name="SE.DPAC" Version="22.1.0.24" />
+  <LibraryItem Name="SE.Standard" Version="22.1.0.9" />
+  <LibraryItem Name="Standard.HMIExtensions" Version="22.1.0.5" />
+</CompileFileList>

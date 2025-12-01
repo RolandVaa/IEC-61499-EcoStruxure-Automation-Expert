@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeployFiles xmlns="http://tempuri.org/DeploySnapshot.xsd">
+  <Deployable>
+    <DeployInformation Type="Working">
+      <FileGroup Name="FileList">
+        <FileItem Name="Composites/Main#LEDHMI_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>B427CDFEE92E519EAC134E339BFAC754ED737E515B3E8DB63A8887BF87C8EA68</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#LEDHMI.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>3E30B178EECEF9E2695248C19C3623E056598C53A5C9C2F63303B16A8918E93C</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:16</Modified>
+          <Hash>F285696B7E766B137E821FCEBE1324D239E003FE823F8106A0A8BDD5244362B2</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_12120F4A7FB80576D.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>69B0891522F7E369035B5DF2FF94CF666F7BD760E290D01E347B3C10DF2E59C7</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" BuildSnapshot="{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}">
+          <Modified>2025-12-01T22:28:14</Modified>
+          <Hash>0A64B6BD97E1EEBD4BE6B4675A3C2E79C623022757D9F356E851C2DD5CEAE871</Hash>
+        </FileItem>
+      </FileGroup>
+      <FileGroup Name="DeployList">
+        <FileItem Name="Composites/Main#LEDHMI_HMI.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#LEDHMI.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_12120F4A7FB80576D.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" />
+      </FileGroup>
+    </DeployInformation>
+  </Deployable>
+</DeployFiles>

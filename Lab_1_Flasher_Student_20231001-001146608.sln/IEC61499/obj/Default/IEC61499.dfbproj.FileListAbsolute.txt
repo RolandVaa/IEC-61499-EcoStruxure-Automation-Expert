@@ -1,0 +1,3 @@
+C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\bin\Default\IEC61499.dll
+C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\obj\Default\IEC61499.dfbproj.CoreCompileInputs.cache
+C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\obj\Default\IEC61499.dll

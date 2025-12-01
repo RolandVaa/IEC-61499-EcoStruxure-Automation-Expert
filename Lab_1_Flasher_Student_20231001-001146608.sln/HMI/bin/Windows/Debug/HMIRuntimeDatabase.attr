@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HMIProjectDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Lab_1_Flasher_Student" Guid="{55A54F16-0779-4FF4-BA5B-5514D0264054}" xmlns="http://www.nxtcontrol.com/IEC61499.xsd">
+  <DeviceDeployments Device="System.DISPLAY">
+    <Attrs Name="HMI.Alias" Value="" Context="RES0.LED_PANEL" />
+  </DeviceDeployments>
+  <DeviceDeployments Device="System.CTL_PANEL">
+    <Attrs Name="HMI.Alias" Value="" Context="RES0.RadioBool" />
+    <Attrs Name="HMI.Alias" Value="" Context="RES0.FREQ" />
+    <Attrs Name="HMI.Alias" Value="" Context="RES0.MODE" />
+  </DeviceDeployments>
+</HMIProjectDatabase>

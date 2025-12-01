@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE System SYSTEM "../LibraryElement.dtd">
+<System Name="System">
+  <Device ID="2ea872c1-2742-4cc8-b5fc-f64b860203df" Name="DISPLAY" Type="Soft_dPAC" x="557.7812" y="1280" Namespace="SE.DPAC">
+    <Resource ID="EB5F0A8C2C3EC249" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
+      <FBNetwork>
+        <FB ID="6D640AFC2079080D" Name="LED_PANEL" Type="LEDHMI" x="1240" y="200" Namespace="Main">
+          <Parameter Name="QI" Value="TRUE" />
+        </FB>
+        <FB ID="9C8311F58A2F88E2" Name="CHAN_FLASHER_RES0" Type="COMM_CHANN_DESC" x="500" y="300" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51300" />
+          <Parameter Name="PEERNAME" Value="'FLASHER.RES0'" />
+        </FB>
+        <FB ID="E83A2B7E04DE9827" Name="CHAN_CTL_PANEL_RES0" Type="COMM_CHANN_DESC" x="1900" y="300" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51304" />
+          <Parameter Name="PEERNAME" Value="'CTL_PANEL.RES0'" />
+        </FB>
+        <FB Name="SND_PROXY_22803741C1DD7B0B" Type="CROSSCOMM_SENDER_45FE03D7848F2EB2" Comment="FLASHER_RES0_APP1_LED_PANEL" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="PROXY_671432799529802F" Type="CROSSCOMM_PEER_12120F4A7FB80576D" Comment="DISPLAY_RES0_APP1_FB1" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;LED3&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LED2&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LED1&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LED0&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED3&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED2&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED1&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED0&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;  &lt;/OutputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="PROXY_102481900DA70C230" Type="CROSSCOMM_PEER_195C19FF067434822" Comment="DISPLAY_RES0_APP1_MODE" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="START" Type="E_RESTART" x="80" y="100" Namespace="IEC61499.Standard" />
+        <EventConnections>
+          <Connection Source="START.COLD" Destination="LED_PANEL.INIT" dx1="68.60425" />
+          <Connection Source="START.WARM" Destination="LED_PANEL.INIT" dx1="48.60425" />
+          <Connection Source="LED_PANEL.INITO" Destination="SND_PROXY_22803741C1DD7B0B.INITO" />
+          <Connection Source="PROXY_671432799529802F.CNF" Destination="LED_PANEL.REQ" />
+          <Connection Source="PROXY_102481900DA70C230.INITO" Destination="LED_PANEL.INIT" />
+        </EventConnections>
+        <DataConnections>
+          <Connection Source="PROXY_671432799529802F.LED3" Destination="LED_PANEL.LED3" />
+          <Connection Source="PROXY_671432799529802F.LED2" Destination="LED_PANEL.LED2" />
+          <Connection Source="PROXY_671432799529802F.LED1" Destination="LED_PANEL.LED1" />
+          <Connection Source="PROXY_671432799529802F.LED0" Destination="LED_PANEL.LED0" />
+        </DataConnections>
+        <AdapterConnections />
+      </FBNetwork>
+    </Resource>
+    <FBNetwork />
+  </Device>
+</System>

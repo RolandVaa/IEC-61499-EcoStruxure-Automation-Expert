@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType Name="CROSSCOMM_PEER_12120F4A7FB80576D" Comment="Service Interface Function Block Type" Namespace="Main">
+  <Attribute Name="Runtime.FBType.ImplementingType" Value="Runtime.System#DYNGEN_CROSSCOMM_PEER" />
+  <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;LED3&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LED2&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LED1&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LED0&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED3&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED2&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED1&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LED0&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;  &lt;/OutputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+  <Attribute Name="Configuration.FB.IDCounter" Value="0" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="nxtControl GmbH " Version="0.0" Author="bababen" Date="9/22/2017" Remarks="template" />
+  <CompilerInfo>
+    <Compiler Language="Cpp" Vendor="nxtControl" Product="builtin " Version="1.0" />
+  </CompilerInfo>
+  <InterfaceList>
+    <EventOutputs>
+      <Event Name="CNF">
+        <With Var="LED3" />
+        <With Var="LED2" />
+        <With Var="LED1" />
+        <With Var="LED0" />
+      </Event>
+    </EventOutputs>
+    <OutputVars>
+      <VarDeclaration Name="LED3" Type="BOOL" />
+      <VarDeclaration Name="LED2" Type="BOOL" />
+      <VarDeclaration Name="LED1" Type="BOOL" />
+      <VarDeclaration Name="LED0" Type="BOOL" />
+    </OutputVars>
+  </InterfaceList>
+  <BasicFB>
+    <ECC>
+      <ECState Name="START" />
+    </ECC>
+  </BasicFB>
+</FBType>

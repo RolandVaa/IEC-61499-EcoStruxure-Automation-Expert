@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{0B6E8234-6B1D-4F3D-A803-F7F5E6AA0B6E}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HMI</RootNamespace>
+    <AssemblyName>HMI</AssemblyName>
+    <ProjectType>HMI</ProjectType>
+    <HMILibraries>HMIBaseSymbols:</HMILibraries>
+    <Theme>DefaultLight:Default|DefaultLight</Theme>
+    <NxtVersion>23.0.0.0</NxtVersion>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <CanvasLookAndFeel>Theme</CanvasLookAndFeel>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'Windows' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\$(Platform)\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\$(Platform)\Release</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG%3bTRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows' ">
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Canvas1.cnv.cs">
+      <Canvas>true</Canvas>
+    </Compile>
+    <Compile Include="Canvas1.cnv.Designer.cs">
+      <DependentUpon>Canvas1.cnv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAT1\CAT1.def.cs" />
+    <Compile Include="CAT1\CAT1.event.cs" />
+    <Compile Include="CAT1\CAT1_sDefault.cnv.cs" />
+    <Compile Include="CAT1\CAT1_sDefault.cnv.Designer.cs">
+      <DependentUpon>CAT1_sDefault.cnv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colors\ProjectColors.cs" />
+    <Compile Include="Colors\ProjectDrawingObjects.cs" />
+    <Compile Include="INCHOICE\INCHOICE.def.cs" />
+    <Compile Include="INCHOICE\INCHOICE.event.cs" />
+    <Compile Include="INCHOICE\INCHOICE_sDefault.cnv.cs" />
+    <Compile Include="INCHOICE\INCHOICE_sDefault.cnv.Designer.cs">
+      <DependentUpon>INCHOICE_sDefault.cnv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INTIME\INTIME.def.cs" />
+    <Compile Include="INTIME\INTIME.event.cs" />
+    <Compile Include="INTIME\INTIME_sDefault.cnv.cs" />
+    <Compile Include="INTIME\INTIME_sDefault.cnv.Designer.cs">
+      <DependentUpon>INTIME_sDefault.cnv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LEDHMI\LEDHMI.def.cs" />
+    <Compile Include="LEDHMI\LEDHMI.event.cs" />
+    <Compile Include="LEDHMI\LEDHMI_sDefault.cnv.cs" />
+    <Compile Include="LEDHMI\LEDHMI_sDefault.cnv.Designer.cs">
+      <DependentUpon>LEDHMI_sDefault.cnv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadioBool\RadioBool.def.cs" />
+    <Compile Include="RadioBool\RadioBool.event.cs" />
+    <Compile Include="RadioBool\RadioBool_sDefault.cnv.cs" />
+    <Compile Include="RadioBool\RadioBool_sDefault.cnv.Designer.cs">
+      <DependentUpon>RadioBool_sDefault.cnv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartCanvas_1.cnv.cs" />
+    <Compile Include="StartCanvas_1.cnv.Designer.cs">
+      <DependentUpon>StartCanvas_1.cnv.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Alarms\AlarmClasses.xml" />
+    <None Include="Colors\Default.color.theme" />
+    <None Include="Colors\Default.do.theme" />
+    <None Include="Colors\DefaultLight.color.theme" />
+    <None Include="Colors\DefaultLight.do.theme" />
+    <None Include="Colors\ProjectColors.xml" />
+    <None Include="Colors\ProjectDrawingObjects.xml" />
+    <None Include="ImageStorage\ImageStorage.xml" />
+    <None Include="INCHOICE\INCHOICE.Design.resx" />
+    <None Include="INTIME\INTIME.Design.resx" />
+    <none Include="Languages\neutral\Dictionary.Resources.xml" />
+    <None Include="LEDHMI\LEDHMI.Design.resx" />
+    <None Include="RadioBool\RadioBool.Design.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Alarms\AlarmClasses.xml" />
+    <EmbeddedResource Include="Alarms\SystemAlarmClasses.xml" />
+    <EmbeddedResource Include="Canvas1.cnv.resx">
+      <DependentUpon>Canvas1.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAT1\CAT1.Design.resx" />
+    <EmbeddedResource Include="CAT1\CAT1_sDefault.cnv.resx">
+      <DependentUpon>CAT1_sDefault.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAT1\CAT1_sDefault.cnv.xml">
+      <DependentUpon>CAT1_sDefault.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurations\HistoryTrend.xml" />
+    <EmbeddedResource Include="Configurations\Journalling.xml" />
+    <EmbeddedResource Include="Configurations\TagValueEditor.xml" />
+    <EmbeddedResource Include="INCHOICE\INCHOICE_sDefault.cnv.resx">
+      <DependentUpon>INCHOICE_sDefault.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INCHOICE\INCHOICE_sDefault.cnv.xml">
+      <DependentUpon>INCHOICE_sDefault.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INTIME\INTIME_sDefault.cnv.resx">
+      <DependentUpon>INTIME_sDefault.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INTIME\INTIME_sDefault.cnv.xml">
+      <DependentUpon>INTIME_sDefault.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LEDHMI\LEDHMI_sDefault.cnv.resx">
+      <DependentUpon>LEDHMI_sDefault.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LEDHMI\LEDHMI_sDefault.cnv.xml">
+      <DependentUpon>LEDHMI_sDefault.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadioBool\RadioBool_sDefault.cnv.resx">
+      <DependentUpon>RadioBool_sDefault.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadioBool\RadioBool_sDefault.cnv.xml">
+      <DependentUpon>RadioBool_sDefault.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartCanvas_1.cnv.resx">
+      <DependentUpon>StartCanvas_1.cnv.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CommunicationProfile">
+      <HintPath>CommunicationProfile</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HMIBaseSymbols">
+      <HintPath>HMIBaseSymbols</HintPath>
+    </Reference>
+    <Reference Include="NxtControl.ComponentModel">
+      <HintPath>NxtControl.ComponentModel</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NxtControl.GuiFramework">
+      <HintPath>NxtControl.GuiFramework</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SE.DPAC.HMI">
+      <Version>22.1.0.24</Version>
+      <HintPath>SE.DPAC.HMI</HintPath>
+    </Reference>
+    <Reference Include="Standard.HMIExtensions.HMI">
+      <Version>22.1.0.5</Version>
+      <HintPath>Standard.HMIExtensions.HMI</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(SharpDevelopBinPath)\SharpDevelop.Build.CSharp.targets" />
+</Project>

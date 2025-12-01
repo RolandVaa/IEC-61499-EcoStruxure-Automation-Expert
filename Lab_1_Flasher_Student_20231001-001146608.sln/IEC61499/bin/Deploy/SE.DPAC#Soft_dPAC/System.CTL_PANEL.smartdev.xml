@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE System SYSTEM "../LibraryElement.dtd">
+<System Name="System">
+  <Device ID="ec8bb4cb-ab92-487e-a5a5-781a1131d14c" Name="CTL_PANEL" Type="Soft_dPAC" x="573.7396" y="1860" Namespace="SE.DPAC">
+    <Resource ID="21EA8A5999B59D90" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
+      <FBNetwork>
+        <FB ID="2E67825B6AA0B726" Name="RadioBool" Type="RadioBool" x="700" y="320" Namespace="Main">
+          <Parameter Name="QI" Value="TRUE" />
+          <Parameter Name="Label1" Value="'Start'" />
+          <Parameter Name="Label0" Value="'Stop'" />
+        </FB>
+        <FB ID="7F1ED6AFDF360E96" Name="FREQ" Type="INTIME" x="1360" y="1340" Namespace="Main">
+          <Parameter Name="QI" Value="TRUE" />
+          <Parameter Name="MINMS" Value="200" />
+          <Parameter Name="MAXMS" Value="1000" />
+        </FB>
+        <FB ID="82FC7AFDC67C2E79" Name="MODE" Type="INCHOICE" x="2520" y="1560" Namespace="Main">
+          <Parameter Name="QI" Value="TRUE" />
+        </FB>
+        <FB ID="4EF9FBE9447B0A7B" Name="CHAN_FLASHER_RES0" Type="COMM_CHANN_DESC" x="500" y="300" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51301" />
+          <Parameter Name="PEERNAME" Value="'FLASHER.RES0'" />
+        </FB>
+        <FB ID="2CBEC1B01E4BB617" Name="CHAN_DISPLAY_RES0" Type="COMM_CHANN_DESC" x="1900" y="300" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51305" />
+          <Parameter Name="PEERNAME" Value="'DISPLAY.RES0'" />
+        </FB>
+        <FB Name="SND_PROXY_114FE3C8BE6553495" Type="CROSSCOMM_SENDER_153F5A08CC8D75AF0" Comment="FLASHER_RES0_APP1_FREQ" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;OUT&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;OUT&quot; Type=&quot;TIME&quot; /&gt;&#xD;&#xA;  &lt;/InputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="SND_PROXY_179ED70CC4100920F" Type="CROSSCOMM_SENDER_200C0D3AE43A7966C" Comment="FLASHER_RES0_APP1_MODE" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;I&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;I&quot; Type=&quot;UINT&quot; /&gt;&#xD;&#xA;  &lt;/InputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="SND_PROXY_334910CDF2D5CD04" Type="CROSSCOMM_SENDER_173D71B9DC3A56340" Comment="FLASHER_RES0_APP1_RadioBool" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;Out&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;Out&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;  &lt;/InputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="SND_PROXY_102481900DA70C230" Type="CROSSCOMM_SENDER_45FE03D7848F2EB2" Comment="DISPLAY_RES0_APP1_MODE" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="START" Type="E_RESTART" x="80" y="100" Namespace="IEC61499.Standard" />
+        <EventConnections>
+          <Connection Source="START.COLD" Destination="RadioBool.INIT" dx1="48.60425" />
+          <Connection Source="START.WARM" Destination="RadioBool.INIT" dx1="48.60425" />
+          <Connection Source="RadioBool.INITO" Destination="FREQ.INIT" dx1="47.85425" />
+          <Connection Source="FREQ.INITO" Destination="MODE.INIT" dx1="40" />
+          <Connection Source="FREQ.CNF" Destination="SND_PROXY_114FE3C8BE6553495.CNF" />
+          <Connection Source="MODE.CNF" Destination="SND_PROXY_179ED70CC4100920F.CNF" />
+          <Connection Source="MODE.INITO" Destination="SND_PROXY_179ED70CC4100920F.INITO" />
+          <Connection Source="RadioBool.CNF" Destination="SND_PROXY_334910CDF2D5CD04.CNF" />
+          <Connection Source="MODE.INITO" Destination="SND_PROXY_102481900DA70C230.INITO" />
+        </EventConnections>
+        <DataConnections>
+          <Connection Source="FREQ.OUT" Destination="SND_PROXY_114FE3C8BE6553495.OUT" />
+          <Connection Source="MODE.I" Destination="SND_PROXY_179ED70CC4100920F.I" />
+          <Connection Source="RadioBool.Out" Destination="SND_PROXY_334910CDF2D5CD04.Out" />
+        </DataConnections>
+        <AdapterConnections />
+      </FBNetwork>
+    </Resource>
+    <FBNetwork />
+  </Device>
+</System>

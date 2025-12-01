@@ -1,0 +1,18 @@
+{
+  "snapshot": {
+    "guid": "d2fbfbc9-d272-4c18-91a4-d83d0cb5d909",
+    "hash": "D67A9FE1874949B2C77605B6C18E67C6E7236F962B1A142D7E0F929533670F4D",
+    "app": {
+      "hash": "D67A9FE1874949B2C77605B6C18E67C6E7236F962B1A142D7E0F929533670F4D",
+      "items": [
+        "Main#LEDHMI_HMI.bin",
+        "Main#LEDHMI.bin",
+        "Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin",
+        "Main#CROSSCOMM_PEER_12120F4A7FB80576D.bin",
+        "Main#CROSSCOMM_PEER_195C19FF067434822.bin",
+        "Device.bin",
+        "CommDesc.xml"
+      ]
+    }
+  }
+}

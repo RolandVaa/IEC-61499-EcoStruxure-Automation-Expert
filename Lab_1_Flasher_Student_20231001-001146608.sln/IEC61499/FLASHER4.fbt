@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="e8a6fa9c-bba5-4984-aa14-2ecac9a4b592" Name="FLASHER4" Comment="Basic Function Block Type" Namespace="Main">
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="UoA" Version="0.0" Author="vvya002" Date="25/03/2012" Remarks="Template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="INIT" Comment="Initialization Request">
+        <With Var="MODE" />
+      </Event>
+      <Event Name="REQ" Comment="Update Request">
+        <With Var="MODE" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="INITO" />
+      <Event Name="CNF" Comment="Update Confirmation">
+        <With Var="LED3" />
+        <With Var="LED2" />
+        <With Var="LED1" />
+        <With Var="LED0" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="MODE" Type="UINT" Comment="0=FLASH_ALL,1=COUNT_UP,2=COUNT_DOWN,3=CHASE_UP,4=CHASE_DOWN" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="LED3" Type="BOOL" Comment="MSB" />
+      <VarDeclaration Name="LED2" Type="BOOL" />
+      <VarDeclaration Name="LED1" Type="BOOL" />
+      <VarDeclaration Name="LED0" Type="BOOL" Comment="LSB" />
+    </OutputVars>
+  </InterfaceList>
+  <BasicFB>
+    <Attribute Name="FBType.Basic.Algorithm.Order" Value="INIT,COUNT_UP,COUNT_DOWN,FLASH_ALL,CHASE_UP,CHASE_DOWN" />
+    <InternalVars>
+      <VarDeclaration Name="OFLO" Type="BOOL" />
+    </InternalVars>
+    <ECC>
+      <ECState Name="WAIT" x="1444.444" y="1022.222" />
+      <ECState Name="INIT" x="1368.444" y="102">
+        <ECAction Algorithm="INIT" Output="INITO" />
+      </ECState>
+      <ECState Name="FLASH_ALL" x="2061.111" y="511.1111">
+        <ECAction Algorithm="FLASH_ALL" Output="CNF" />
+      </ECState>
+      <ECState Name="COUNT_UP" x="2083.333" y="1533.333">
+        <ECAction Algorithm="COUNT_UP" Output="CNF" />
+      </ECState>
+      <ECState Name="COUNT_DOWN" x="1444.444" y="1994.444">
+        <ECAction Algorithm="COUNT_DOWN" Output="CNF" />
+      </ECState>
+      <ECState Name="CHASE_UP" x="282.4444" y="1582.889">
+        <ECAction Algorithm="CHASE_UP" Output="CNF" />
+      </ECState>
+      <ECState Name="CHASE_DOWN" x="262.2222" y="516.6666">
+        <ECAction Algorithm="CHASE_DOWN" Output="CNF" />
+      </ECState>
+      <ECState Name="START" x="852" y="192" />
+      <ECTransition Source="WAIT" Destination="INIT" Condition="INIT" x="1406.077" y="637.111">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="354.4185,199.5218,348.8035,131.5337" />
+      </ECTransition>
+      <ECTransition Source="WAIT" Destination="FLASH_ALL" Condition="REQ&amp;(MODE=0)" x="1741.076" y="691.6665" />
+      <ECTransition Source="WAIT" Destination="COUNT_UP" Condition="REQ&amp;(MODE=1)" x="1820.096" y="1217.702" />
+      <ECTransition Source="WAIT" Destination="COUNT_DOWN" Condition="REQ&amp;(MODE=2)" x="1523.264" y="1508.333" />
+      <ECTransition Source="WAIT" Destination="CHASE_UP" Condition="REQ&amp;(MODE=3)" x="910.8212" y="1370.949">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="266.1293,329.1423,187.3209,367.1675" />
+      </ECTransition>
+      <ECTransition Source="WAIT" Destination="CHASE_DOWN" Condition="REQ&amp;(MODE=4)" x="854.7198" y="850.493">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="254.6524,235.0305,175.3573,201.1213" />
+      </ECTransition>
+      <ECTransition Source="INIT" Destination="WAIT" Condition="1" x="1485.23" y="555.9379">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="373.7186,104.476,379.3337,172.4641" />
+      </ECTransition>
+      <ECTransition Source="FLASH_ALL" Destination="WAIT" Condition="1" x="1810.21" y="825.7522" />
+      <ECTransition Source="COUNT_UP" Destination="WAIT" Condition="1" x="1751.765" y="1352.778" />
+      <ECTransition Source="COUNT_DOWN" Destination="WAIT" Condition="1" x="1444.444" y="1583.333" />
+      <ECTransition Source="CHASE_UP" Destination="WAIT" Condition="1" x="858.9382" y="1224.378">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="176.4568,319.6515,255.2652,281.6263" />
+      </ECTransition>
+      <ECTransition Source="CHASE_DOWN" Destination="WAIT" Condition="1" x="876.051" y="704.0183">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="175.0062,153.6297,254.2162,187.4836" />
+      </ECTransition>
+      <ECTransition Source="START" Destination="WAIT" Condition="1" x="1186.932" y="559.2317">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="276.8892,105.5325,320.1886,166.1035" />
+      </ECTransition>
+    </ECC>
+    <Algorithm Name="INIT">
+      <ST Text="LED0:=(MODE&gt;2);&#xA;LED1:=0;&#xA;LED2:=0;&#xA;LED3:=0;&#xA;" />
+    </Algorithm>
+    <Algorithm Name="COUNT_UP">
+      <ST Text="LED0:=NOT LED0;&#xA;IF NOT LED0 THEN&#xA;LED1:=NOT LED1;&#xA;IF NOT LED1 THEN&#xA;LED2:=NOT LED2;&#xA;IF NOT LED2 THEN LED3:=NOT LED3;END_IF;&#xA;END_IF;&#xA;END_IF;&#xA;" />
+    </Algorithm>
+    <Algorithm Name="COUNT_DOWN">
+      <ST Text="LED0:=NOT LED0;&#xA;IF LED0 THEN&#xA;LED1:=NOT LED1;&#xA;IF LED1 THEN&#xA;LED2:=NOT LED2;&#xA;IF LED2 THEN LED3:=NOT LED3;END_IF;&#xA;END_IF;&#xA;END_IF;&#xA;" />
+    </Algorithm>
+    <Algorithm Name="FLASH_ALL">
+      <ST Text="LED0:=NOT LED0;&#xD;&#xA;LED1:=NOT LED1;&#xD;&#xA;LED2:=NOT LED2;&#xD;&#xA;LED3:=NOT LED3;" />
+    </Algorithm>
+    <Algorithm Name="CHASE_UP">
+      <ST Text="OFLO:=LED3;&#xD;&#xA;LED3:=LED2;&#xD;&#xA;LED2:=LED1;&#xD;&#xA;LED1:=LED0;&#xD;&#xA;LED0:=OFLO;&#xD;&#xA;" />
+    </Algorithm>
+    <Algorithm Name="CHASE_DOWN">
+      <ST Text="OFLO:=LED0;&#xD;&#xA;LED0:=LED1;&#xD;&#xA;LED1:=LED2;&#xD;&#xA;LED2:=LED3;&#xD;&#xA;LED3:=OFLO;&#xD;&#xA;" />
+    </Algorithm>
+  </BasicFB>
+</FBType>

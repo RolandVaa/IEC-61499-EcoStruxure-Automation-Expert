@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeployInformation ProjectName="Lab_1_Flasher_Student" ProjectGuid="{55A54F16-0779-4FF4-BA5B-5514D0264054}" System="System" DeviceName="DISPLAY" DeviceID="2ea872c1-2742-4cc8-b5fc-f64b860203df">
+  <UsedDll>IEC61499.dll|Runtime.Base.90E02843-42CC-4C2C-B657-AB6EE7D00471.dll</UsedDll>
+  <FileName>C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\System\System.sys</FileName>
+  <BuildTime>2025-12-01 20:49:09Z</BuildTime>
+  <StudioVersion>IEC 61499 IDE, Panther v23.0 g5171 d5c8a03 Wed Aug 30 07:22:22 2023</StudioVersion>
+  <StudioInfo>V1;FC9D06C3F91E38489BB7FD1CC4037361CF82D211C0027561CF82F91EDE02720DE78DF05DE409737DD48EF615CE13064CCB84A13CCC05171CF9A7F011DE0F2D5FF9B2E805C90226599DB1EE1FC7022B59E194F514901C7D18E7D4A8369C51651D91D6A55D99210E198BA3DD45EF4A7D1897D5D8409F517C1D93D5E14B;</StudioInfo>
+  <ConfigFolder>C:\Users\vaatmar1\OneDrive - Aalto University\Lab1\Lab_1_Flasher_Student_20231001-001146608.sln\IEC61499\bin\Deploy\SE.DPAC#Soft_dPAC\Configuration</ConfigFolder>
+  <Actions />
+  <DeviceFileName>System.DISPLAY.smartdev.xml</DeviceFileName>
+  <DependenciesFileName>System.DISPLAY.fbdep.txt</DependenciesFileName>
+  <SnapshotGuid>{D2FBFBC9-D272-4C18-91A4-D83D0CB5D909}</SnapshotGuid>
+</DeployInformation>

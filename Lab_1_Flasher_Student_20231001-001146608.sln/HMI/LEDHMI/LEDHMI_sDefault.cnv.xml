@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapping>
+  <EventInputs>
+    <Event Name="REQ">LED3;LED2;LED1;LED0</Event>
+  </EventInputs>
+  <EventOutputs />
+  <Inputs>
+    <Input Name="LED3" Type="BOOL" />
+    <Input Name="LED2" Type="BOOL" />
+    <Input Name="LED1" Type="BOOL" />
+    <Input Name="LED0" Type="BOOL" />
+  </Inputs>
+  <Outputs />
+</Mapping>

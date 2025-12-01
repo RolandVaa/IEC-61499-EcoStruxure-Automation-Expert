@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="1878260c-1642-43d3-a251-4d50ec19a446" Name="INCHOICE_HMI" Comment="Service Interface Function Block Type" Namespace="Main">
+  <Attribute Name="Runtime.Persistence.Storage" Value="0" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="Pranay Jhunjhunwala" Date="09/08/2022" Remarks="template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event ID="1494032569ABD555" Name="INIT">
+        <With Var="QI" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event ID="BBAEB836A80D8A6D" Name="INITO">
+        <With Var="QO" />
+        <With Var="STATUS" />
+      </Event>
+      <Event ID="A3B0B8F1AC1EB1C6" Name="CNF">
+        <With Var="I" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration ID="2140070570826872" Name="QI" Type="BOOL" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration ID="EAE40ECD8A2D14E1" Name="QO" Type="BOOL" Comment="Event Output Qualifier" />
+      <VarDeclaration ID="C8C7C73FC29A3598" Name="STATUS" Type="STRING" Comment="Service Status" />
+      <VarDeclaration ID="FBF4B353FFDE93FB" Name="I" Type="UINT" />
+    </OutputVars>
+  </InterfaceList>
+  <Service RightInterface="" LeftInterface="">
+    <ServiceSequence Name="" />
+  </Service>
+</FBType>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HMIProjectDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Lab_1_Flasher_Student" Guid="{55A54F16-0779-4FF4-BA5B-5514D0264054}" xmlns="http://www.nxtcontrol.com/IEC61499.xsd">
+  <DeviceDeployments Device="System.DISPLAY" ID="2ea872c1-2742-4cc8-b5fc-f64b860203df">
+    <DevAttrs Expanded="true">
+      <ComplexProperty Name="Security" DisplayName="Security" Hidden="true" Expanded="true">
+        <ProfileProperty GUID="{E0601B81-4A3A-4A96-B6C2-007BDC680D59}" Hidden="true" />
+        <Property Name="UseEncryption" Description="UseEncryption.Description" DisplayName="UseEncryption" Hidden="true" Value="false" Type="bool" UITypeEditor="EcoRTPlugin.PlatformEditors.InformAboutChangeConfig,EcoRTPlugin" Validation="EcoRTPlugin.PlatformEditors.InformAboutChangeConfig,EcoRTPlugin" ReadOnly="false" SaveModifiedTime="false" IsPassword="false">
+          <ProfileProperty GUID="{E0601B81-4A3A-4A96-B6C2-007BDC680D59}" Value="false" Hidden="true" />
+        </Property>
+        <Property Name="IgnoreCertificateErrors" Description="IgnoreCertificateErrors.Description" DisplayName="IgnoreCertificateErrors" Hidden="true" Value="true" Type="bool" ReadOnly="false" SaveModifiedTime="false" IsPassword="false">
+          <ProfileProperty GUID="{E0601B81-4A3A-4A96-B6C2-007BDC680D59}" Value="true" Hidden="true" />
+        </Property>
+      </ComplexProperty>
+    </DevAttrs>
+    <Capabilities>
+      <Capability Name="MIB" Active="true" Comment="Collection of MIBs supported by device" xmlns="">
+        <CapabilityProperty Name="Project.Name" Type="string" Value="MIB.Project.Name" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.State" Type="string" Value="MIB.Project.State" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.Guid" Type="string" Value="MIB.Project.Guid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.SnapshotGuid" Type="string" Value="MIB.Project.SnapshotGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BuildTime" Type="string" Value="MIB.Project.BuildTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.DeployTime" Type="string" Value="MIB.Project.DeployTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.StartTime" Type="string" Value="MIB.Project.StartTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.StudioVersion" Type="string" Value="MIB.Project.StudioVersion" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.ApplicationForcesActive" Type="string" Value="MIB.Project.ApplicationForcesActive" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.DebugForcesActive" Type="string" Value="MIB.Project.DebugForcesActive" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Device.Name" Type="string" Value="MIB.Device.Name" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.Platform" Type="string" Value="MIB.Software.Platform" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.Version" Type="string" Value="MIB.Software.Version" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.OEMGuid" Type="string" Value="MIB.Software.OEMGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.PlatformGuid" Type="string" Value="MIB.Software.PlatformGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Firmware.Version" Type="string" Value="MIB.Firmware.Version" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectIsMatch" Type="string" Value="MIB.Project.BootProjectIsMatch" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectBuildTime" Type="string" Value="MIB.Project.BootProjectBuildTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectGuid" Type="string" Value="MIB.Project.BootProjectGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectSnapshotGuid" Type="string" Value="MIB.Project.BootProjectSnapshotGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Device.Capabilities" Type="string" Value="MIB.Device.Capabilities" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+      </Capability>
+    </Capabilities>
+  </DeviceDeployments>
+  <DeviceDeployments Device="System.CTL_PANEL" ID="ec8bb4cb-ab92-487e-a5a5-781a1131d14c">
+    <DevAttrs Expanded="true">
+      <ComplexProperty Name="Security" DisplayName="Security" Hidden="true" Expanded="true">
+        <ProfileProperty GUID="{E0601B81-4A3A-4A96-B6C2-007BDC680D59}" Hidden="true" />
+        <Property Name="UseEncryption" Description="UseEncryption.Description" DisplayName="UseEncryption" Hidden="true" Value="false" Type="bool" UITypeEditor="EcoRTPlugin.PlatformEditors.InformAboutChangeConfig,EcoRTPlugin" Validation="EcoRTPlugin.PlatformEditors.InformAboutChangeConfig,EcoRTPlugin" ReadOnly="false" SaveModifiedTime="false" IsPassword="false">
+          <ProfileProperty GUID="{E0601B81-4A3A-4A96-B6C2-007BDC680D59}" Value="false" Hidden="true" />
+        </Property>
+        <Property Name="IgnoreCertificateErrors" Description="IgnoreCertificateErrors.Description" DisplayName="IgnoreCertificateErrors" Hidden="true" Value="true" Type="bool" ReadOnly="false" SaveModifiedTime="false" IsPassword="false">
+          <ProfileProperty GUID="{E0601B81-4A3A-4A96-B6C2-007BDC680D59}" Value="true" Hidden="true" />
+        </Property>
+      </ComplexProperty>
+    </DevAttrs>
+    <Capabilities>
+      <Capability Name="MIB" Active="true" Comment="Collection of MIBs supported by device" xmlns="">
+        <CapabilityProperty Name="Project.Name" Type="string" Value="MIB.Project.Name" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.State" Type="string" Value="MIB.Project.State" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.Guid" Type="string" Value="MIB.Project.Guid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.SnapshotGuid" Type="string" Value="MIB.Project.SnapshotGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BuildTime" Type="string" Value="MIB.Project.BuildTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.DeployTime" Type="string" Value="MIB.Project.DeployTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.StartTime" Type="string" Value="MIB.Project.StartTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.StudioVersion" Type="string" Value="MIB.Project.StudioVersion" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.ApplicationForcesActive" Type="string" Value="MIB.Project.ApplicationForcesActive" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.DebugForcesActive" Type="string" Value="MIB.Project.DebugForcesActive" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Device.Name" Type="string" Value="MIB.Device.Name" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.Platform" Type="string" Value="MIB.Software.Platform" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.Version" Type="string" Value="MIB.Software.Version" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.OEMGuid" Type="string" Value="MIB.Software.OEMGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.PlatformGuid" Type="string" Value="MIB.Software.PlatformGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Firmware.Version" Type="string" Value="MIB.Firmware.Version" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectIsMatch" Type="string" Value="MIB.Project.BootProjectIsMatch" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectBuildTime" Type="string" Value="MIB.Project.BootProjectBuildTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectGuid" Type="string" Value="MIB.Project.BootProjectGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectSnapshotGuid" Type="string" Value="MIB.Project.BootProjectSnapshotGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Device.Capabilities" Type="string" Value="MIB.Device.Capabilities" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+      </Capability>
+    </Capabilities>
+  </DeviceDeployments>
+  <DeviceDeployments Device="System.FLASHER" ID="d2fc03ae-0ddd-4bb1-a3cf-8f52b744df65">
+    <DevAttrs Expanded="true">
+      <ComplexProperty Name="Security" DisplayName="Security" Hidden="true" Expanded="true">
+        <ProfileProperty GUID="{E0601B81-4A3A-4A96-B6C2-007BDC680D59}" Hidden="true" />
+        <Property Name="UseEncryption" Description="UseEncryption.Description" DisplayName="UseEncryption" Hidden="true" Value="false" Type="bool" UITypeEditor="EcoRTPlugin.PlatformEditors.InformAboutChangeConfig,EcoRTPlugin" Validation="EcoRTPlugin.PlatformEditors.InformAboutChangeConfig,EcoRTPlugin" ReadOnly="false" SaveModifiedTime="false" IsPassword="false">
+          <ProfileProperty GUID="{E0601B81-4A3A-4A96-B6C2-007BDC680D59}" Value="false" Hidden="true" />
+        </Property>
+        <Property Name="IgnoreCertificateErrors" Description="IgnoreCertificateErrors.Description" DisplayName="IgnoreCertificateErrors" Hidden="true" Value="true" Type="bool" ReadOnly="false" SaveModifiedTime="false" IsPassword="false">
+          <ProfileProperty GUID="{E0601B81-4A3A-4A96-B6C2-007BDC680D59}" Value="true" Hidden="true" />
+        </Property>
+      </ComplexProperty>
+    </DevAttrs>
+    <Capabilities>
+      <Capability Name="MIB" Active="true" Comment="Collection of MIBs supported by device" xmlns="">
+        <CapabilityProperty Name="Project.Name" Type="string" Value="MIB.Project.Name" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.State" Type="string" Value="MIB.Project.State" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.Guid" Type="string" Value="MIB.Project.Guid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.SnapshotGuid" Type="string" Value="MIB.Project.SnapshotGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BuildTime" Type="string" Value="MIB.Project.BuildTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.DeployTime" Type="string" Value="MIB.Project.DeployTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.StartTime" Type="string" Value="MIB.Project.StartTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.StudioVersion" Type="string" Value="MIB.Project.StudioVersion" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.ApplicationForcesActive" Type="string" Value="MIB.Project.ApplicationForcesActive" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.DebugForcesActive" Type="string" Value="MIB.Project.DebugForcesActive" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Device.Name" Type="string" Value="MIB.Device.Name" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.Platform" Type="string" Value="MIB.Software.Platform" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.Version" Type="string" Value="MIB.Software.Version" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.OEMGuid" Type="string" Value="MIB.Software.OEMGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Software.PlatformGuid" Type="string" Value="MIB.Software.PlatformGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Firmware.Version" Type="string" Value="MIB.Firmware.Version" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectIsMatch" Type="string" Value="MIB.Project.BootProjectIsMatch" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectBuildTime" Type="string" Value="MIB.Project.BootProjectBuildTime" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectGuid" Type="string" Value="MIB.Project.BootProjectGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Project.BootProjectSnapshotGuid" Type="string" Value="MIB.Project.BootProjectSnapshotGuid" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+        <CapabilityProperty Name="Device.Capabilities" Type="string" Value="MIB.Device.Capabilities" MultiValue="false" DisplayEmptyValue="false" IsSingleton="false" />
+      </Capability>
+    </Capabilities>
+  </DeviceDeployments>
+</HMIProjectDatabase>
